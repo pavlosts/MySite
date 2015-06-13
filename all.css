@@ -1,0 +1,208 @@
+body{
+	background-color: #101010;
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+h3, h4{
+	font-size: 3em;
+}
+
+h1{
+	text-align: center;
+	font-size: 5em;
+	color: #4A8038;
+	text-shadow: 2px 2px black;
+	padding: 40px 0px 30px 0px;
+}
+
+p{
+	color: #7DCA97;
+	font-size: 1.3em;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.Header{
+	color: #6CE16C;
+	background-color: #020202;
+	text-align: center;
+	margin-top: -20px;
+	font-size: 4em;
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+}
+
+.Header img{
+	border-radius: 120px;
+	border: solid 2px #0D810A;
+}
+
+.page-wrap{
+	position: relative;
+	top: 300px;
+	background-color: #101010;
+}
+
+.About{
+	background-color: #090909;
+	padding-bottom: 20px;
+}
+
+.About h3, h4{
+	color: #19A347;
+}
+
+.Fairyart{
+	position: relative;
+	top: 60px;
+}
+
+.Fairyart .Text{
+	position: relative;
+	top: 50px;
+	width: 50%;
+	text-align: center;
+	color: #94FF70;
+}
+
+.Fairyart .Text a{
+	text-decoration: none;
+	color: #5EA348;
+}
+
+.Fairyart .Text h2{
+	font-size: 4em;
+}
+
+.Fairyart .Text p{
+	font-size: 1.3em;
+}
+
+.Fairyart .Image{
+	width: 50%;
+	text-align: center;
+}
+
+.Tools{
+	background-color: #090909;
+	margin-top: 80px;
+	height: 100%;
+}
+
+.Tools .Tool{
+	height: 180px;
+	width: 150px;
+	padding-top: 20px;
+	background-color: #101010;
+	position: relative;
+	bottom: 20px;
+	box-shadow: inset 2px 2px 5px black;
+	border: 0px solid black;
+	border-radius: 5px;
+	border: 1px solid #090909;
+}
+
+.Tools .container{
+	padding-top: 50px;
+}
+
+.Tool:hover{
+	background-color: #141414;
+	box-shadow: 2px 2px 5px black;
+	border: 0px solid black;
+}
+
+.Tool p{
+	color: white;
+	font-size: 1.8em;
+	position: relative;
+}
+
+.Contact{
+	background-color: #131313;
+}
+
+@media (max-width: 924px) {
+	.page-wrap{
+		position: relative;
+		bottom: 5px;
+	}
+	.footer{
+		position: relative;
+		bottom: 5px;
+	}
+}
+
+@media (max-width: 828px) {
+	.page-wrap{
+		position: relative;
+		bottom: 10px;
+	}
+	.footer{
+		position: relative;
+		bottom: 10px;
+	}
+}
+
+@media (max-width: 750px) {
+	.page-wrap{
+		position: relative;
+		bottom: 15px;
+	}
+	.footer{
+		position: relative;
+		bottom: 15px;
+	}
+
+}
+
+@media (max-width: 680px) {
+	.page-wrap{
+		position: relative;
+		bottom: 20px;
+	}
+	.footer{
+		position: relative;
+		bottom: 20px;
+	}
+}
+
+
+@media (max-width: 585px) {
+	.page-wrap{
+		position: relative;
+		bottom: 30px;
+	}
+	.footer{
+		position: relative;
+		bottom: 30px;
+	}
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .page-wrap:after {
+  height: 60px; 
+}
+
+.footer{
+	font-family: 'Raleway', sans-serif;
+	background-color: black;
+	color: #909093;
+	text-align: center;
+	width: 100%;
+}
+
+.footer p:first-of-type{
+	position: relative;
+	top: 7px;
+}

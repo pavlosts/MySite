@@ -112,6 +112,10 @@ a:hover{
 	padding-top: 50px;
 }
 
+.Tools .container > div{
+	padding-bottom: 20px;
+}
+
 .Tool:hover{
 	background-color: #141414;
 	box-shadow: 2px 2px 5px black;

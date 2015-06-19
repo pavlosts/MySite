@@ -1,7 +1,9 @@
+/*General style*/
 body{
 	background-color: #101010;
 	font-family: 'Raleway', sans-serif;
-	width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 	color: white;
 	text-align: center;
 }
@@ -27,6 +29,13 @@ a:hover{
 	text-decoration: none;
 }
 
+/*Dividing line*/
+.line{
+	border-top: 1px solid #171717;
+	margin-bottom: 10px;
+}
+
+/*1st row*/
 .Header{
 	color: #6CE16C;
 	background-color: #020202;
@@ -43,12 +52,14 @@ a:hover{
 	border: solid 2px #0D810A;
 }
 
+/*Anything after header*/
 .page-wrap{
 	position: relative;
 	top: 300px;
 	background-color: #101010;
 }
 
+/*2nd row*/
 .About{
 	background-color: #090909;
 	padding-bottom: 20px;
@@ -58,37 +69,36 @@ a:hover{
 	color: #19A347;
 }
 
-.Fairyart{
-	position: relative;
-	top: 60px;
+/*3rd row*/
+.Work{
+	margin-top: 60px;
 }
 
-.Fairyart .Text{
-	position: relative;
-	top: 50px;
+.Work .Text{
 	width: 50%;
 	text-align: center;
 	color: #94FF70;
 }
 
-.Fairyart .Text a{
+.Work .Text a{
 	text-decoration: none;
 	color: #5EA348;
 }
 
-.Fairyart .Text h2{
+.Work .Text h2{
 	font-size: 4em;
 }
 
-.Fairyart .Text p{
+.Work .Text p{
 	font-size: 1.3em;
 }
 
-.Fairyart .Image{
+.Work .Image{
 	width: 50%;
 	text-align: center;
 }
 
+/*4th row*/
 .Tools{
 	background-color: #090909;
 	margin-top: 80px;
@@ -103,9 +113,12 @@ a:hover{
 	position: relative;
 	bottom: 20px;
 	box-shadow: inset 2px 2px 5px black;
-	border: 0px solid black;
 	border-radius: 5px;
 	border: 1px solid #090909;
+}
+
+.Tools .Tool img{
+	
 }
 
 .Tools .container{
@@ -128,82 +141,42 @@ a:hover{
 	position: relative;
 }
 
+@media(max-width: 991px){
+	.Tools .Tool img{
+		transform: scale(0.7);
+	}
+	.Tools .Tool{
+		font-size: 70%;
+		height: 150px;
+		width: 105px;
+		padding-top: 1%;
+	}
+}
+/*@media(max-width: 715px){
+	.Tools .Tool img{
+		transform: scale(0.5);
+		padding-left: -50px;
+	}
+	.Tools .Tool{
+		font-size: 50%;
+		height: 150px;
+		width: 75px;
+	}
+}*/
+
+/*5th row*/
 .Contact{
 	background-color: #131313;
 }
 
-@media (max-width: 924px) {
-	.page-wrap{
-		position: relative;
-		bottom: 5px;
-	}
-	.footer{
-		position: relative;
-		bottom: 5px;
-	}
-}
-
-@media (max-width: 828px) {
-	.page-wrap{
-		position: relative;
-		bottom: 10px;
-	}
-	.footer{
-		position: relative;
-		bottom: 10px;
-	}
-}
-
-@media (max-width: 750px) {
-	.page-wrap{
-		position: relative;
-		bottom: 15px;
-	}
-	.footer{
-		position: relative;
-		bottom: 15px;
-	}
-
-}
-
-@media (max-width: 680px) {
-	.page-wrap{
-		position: relative;
-		bottom: 20px;
-	}
-	.footer{
-		position: relative;
-		bottom: 20px;
-	}
-}
-
-
-@media (max-width: 585px) {
-	.page-wrap{
-		position: relative;
-		bottom: 30px;
-	}
-	.footer{
-		position: relative;
-		bottom: 30px;
-	}
-}
-
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-
-.footer, .page-wrap:after {
-  height: 60px; 
-}
-
+/*6th row*/
 .footer{
 	font-family: 'Raleway', sans-serif;
 	background-color: black;
 	color: #909093;
 	text-align: center;
 	width: 100%;
+	height: auto;
 }
 
 .footer p:first-of-type{
